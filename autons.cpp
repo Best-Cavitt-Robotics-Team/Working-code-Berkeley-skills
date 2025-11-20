@@ -128,19 +128,21 @@ void coordsskills(){
   BallStop.set(false);
   Scraper1.set(false);
   Scraper2.set(false);
-  chassis.drive_distance(32.5);
+  chassis.drive_distance(32);
+  
   chassis.turn_to_angle(90);
-  IntakeBottom.spin(reverse);
   Scraper1.set(true);
   Scraper2.set(true);
-  chassis.drive_distance(13);
+  IntakeBottom.spin(reverse);
+
+  chassis.drive_distance(12.5);
   wait(1750,msec);
   IntakeBottom.spin(forward);
-  wait(500, msec);
+  wait(200, msec);
   IntakeBottom.spin(reverse);
   chassis.drive_distance(-14);
   chassis.drive_distance(4);
-  chassis.drive_distance(-16);
+  chassis.drive_distance(-20);
   IntakeTop.spin(reverse);
   wait(250,msec);
   IntakeBottom.spin(forward);
@@ -154,17 +156,20 @@ void coordsskills(){
   chassis.drive_distance(10);
   chassis.turn_to_angle(0);
   chassis.drive_distance(-48);
-  chassis.turn_to_angle(0);
+  
   chassis.drive_distance(-48);
-  chassis.turn_to_angle(0);
+  
   chassis.drive_distance(-24);
-  chassis.turn_to_angle(0);
-  chassis.drive_distance(14);
-  chassis.turn_to_angle(0);
+  
+  chassis.drive_distance(15);
+  Scraper1.set(false);
+  Scraper2.set(false);
   chassis.turn_to_angle(90);
+  Scraper1.set(true);
+  Scraper2.set(true);
   IntakeBottom.spin(reverse);
   wait(150,msec);
-  chassis.drive_distance(17);
+  chassis.drive_distance(19);
   wait(2500, msec);
   IntakeBottom.spin(forward);
   wait(500, msec);
@@ -173,7 +178,7 @@ void coordsskills(){
   chassis.drive_distance(-14);
   chassis.drive_distance(4);
   chassis.turn_to_angle(89);
-  chassis.drive_distance(-17);
+  chassis.drive_distance(-20);
   IntakeTop.spin(reverse);
   wait(250,msec);
   IntakeBottom.spin(forward);
@@ -192,7 +197,7 @@ void coordsskills(){
   chassis.drive_max_voltage = 12;
   Scraper1.set(true);
   Scraper2.set(true);
-  chassis.drive_distance(35);
+  chassis.drive_distance(45);
 
 
 
